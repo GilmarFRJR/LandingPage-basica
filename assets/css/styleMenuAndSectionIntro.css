@@ -1,0 +1,94 @@
+.menu {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem 0 3rem;
+}
+
+.menu h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  display: block;
+  padding: 2.3rem 2.6rem;
+}
+
+.menu ul li a {
+  color: var(--primary-color);
+  font-weight: 600;
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  top: 2.3rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+  left: 5%;
+}
+
+.menu h2 a {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+}
+
+.div-spacing {
+  width: 100%;
+  height: 10rem;
+}
+
+.sectionIntro {
+  display: flex;
+  color: var(--white);
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.sectionIntro div:first-child {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 8rem 9rem 4rem;
+}
+
+.sectionIntro div:first-child h1 {
+  margin-bottom: 5rem;
+}
+
+.sectionIntro div:first-child p {
+  width: 115%;
+}
+
+.sectionIntro div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionIntro div:last-child img {
+  max-width: 95%;
+  height: auto;
+}

@@ -1,0 +1,36 @@
+.grid-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 105vh;
+  color: white;
+}
+
+.grid-content h2 {
+  margin: 0rem 0 1rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin-top: 8rem;
+  counter-reset: grid-counter;
+}
+
+.grid h3 {
+  font-size: 3.5rem;
+  margin: 0 0 2rem 5rem;
+  position: relative;
+}
+
+.grid h3::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  font-size: 8rem;
+  font-style: italic;
+  left: -6rem;
+  top: -3rem;
+  transform: rotate(5deg);
+}

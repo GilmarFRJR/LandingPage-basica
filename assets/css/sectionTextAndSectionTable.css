@@ -1,0 +1,16 @@
+.sectionText {
+  max-width: 60rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.sectionText h2 {
+  margin-bottom: 5rem;
+}
+
+.sectionText p {
+  margin-bottom: 4rem;
+}
