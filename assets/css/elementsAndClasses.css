@@ -60,3 +60,57 @@ a {
 .section {
   min-height: 100vh;
 }
+
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  background-color: rgba(165, 165, 165, 0.5);
+  font-style: italic;
+  text-align: left;
+  padding: 1rem;
+}
+
+table td,
+table th {
+  border: black 1px solid;
+  padding: 0.5rem;
+}
+
+table tfoot {
+  text-align: right;
+  font-style: italic;
+  background-color: rgba(165, 165, 165, 0.5);
+}
+
+table tfoot td {
+  border: none;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  padding: 3rem 0;
+}
+
+.scrollToTop {
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+.scrollToTop img {
+  max-width: 95%;
+  height: auto;
+  transform: rotate(270deg);
+  cursor: pointer;
+}

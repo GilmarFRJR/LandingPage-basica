@@ -1,9 +1,10 @@
 .grid-content {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   height: 105vh;
   color: white;
+  height: auto;
 }
 
 .grid-content h2 {
@@ -14,7 +15,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
-  margin-top: 8rem;
+  margin: 8rem 0 8rem 0;
   counter-reset: grid-counter;
 }
 
@@ -33,4 +34,36 @@
   left: -6rem;
   top: -3rem;
   transform: rotate(5deg);
+}
+
+.grid-content-galery {
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.grid-galery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+  margin: 10rem 0;
+}
+
+.galery-image {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.galery-image img {
+  width: 360px;
+  height: 360px;
+  transition: all 250ms ease-in-out;
+}
+
+.galery-image img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }

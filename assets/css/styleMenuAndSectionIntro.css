@@ -1,8 +1,9 @@
 .menu {
-  background-color: var(--white);
+  background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .menu-content {
@@ -61,7 +62,7 @@
 
 .sectionIntro {
   display: flex;
-  color: var(--white);
+  color: white;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -84,8 +85,9 @@
 
 .sectionIntro div:last-child {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  /* background-color: red; */
+  padding: 0 5rem;
 }
 
 .sectionIntro div:last-child img {

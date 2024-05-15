@@ -1,0 +1,64 @@
+.contact-form {
+  padding-bottom: 10rem;
+}
+
+.contact-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  color: white;
+}
+
+.contact-form fieldset legend {
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.form-group {
+  flex: 1 1 320px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background-color: white;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+}
+
+.form-group button {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-weight: bold;
+  border: 5px white solid;
+  font-size: 3rem;
+  padding: 2rem;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}

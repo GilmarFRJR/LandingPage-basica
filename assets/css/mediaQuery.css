@@ -1,0 +1,34 @@
+@media (max-width: 815px) {
+  .sectionIntro {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .sectionIntro div:first-child {
+    padding: 5rem 0rem 9rem 0rem;
+    width: 95%;
+    margin-bottom: 5rem;
+  }
+
+  .sectionIntro div:first-child h1 {
+    font-size: 4rem;
+  }
+
+  .sectionIntro div:first-child p {
+    width: 100%;
+  }
+
+  .sectionIntro div:last-child {
+    padding: 0 5rem;
+  }
+
+  .grid,
+  .grid-galery {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-content-galery {
+    align-items: center;
+  }
+}
