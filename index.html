@@ -21,12 +21,23 @@
   </head>
 
   <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
     <aside class="menu">
       <div class="main-content menu-content">
-        <h2><a href="">LOGO</a></h2>
+        <h2 onclick="getElementById('close-menu').checked = false;">
+          <a href="#intro">LOGO</a>
+        </h2>
 
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#intro">Intro</a></li>
             <li><a href="#Grid-one">Grid-one</a></li>
             <li><a href="#Galery">Galley</a></li>

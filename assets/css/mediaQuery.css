@@ -1,4 +1,63 @@
+.close-menu {
+  display: none;
+}
+
 @media (max-width: 815px) {
+  .menu {
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+
+  .menu h2 a {
+    font-size: 5rem;
+  }
+
+  .menu-content {
+    flex-direction: column;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .menu ul li {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .close-menu:checked ~ .menu {
+    display: flex;
+  }
+
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "X";
+  }
+
+  .close-menu-label::after {
+    content: "☰";
+    position: fixed;
+    z-index: 99;
+    top: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .div-spacing {
+    display: none;
+  }
+
   .sectionIntro {
     flex-direction: column;
     text-align: center;
